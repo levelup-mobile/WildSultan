@@ -7,26 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA9EB2202A9CAFF600149C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB21F2A9CAFF600149C46 /* AppDelegate.swift */; };
-		BA9EB2222A9CAFF600149C46 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2212A9CAFF600149C46 /* GameScene.sks */; };
-		BA9EB2242A9CAFF600149C46 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2232A9CAFF600149C46 /* Actions.sks */; };
-		BA9EB2262A9CAFF600149C46 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB2252A9CAFF600149C46 /* GameScene.swift */; };
-		BA9EB2282A9CAFF600149C46 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB2272A9CAFF600149C46 /* GameViewController.swift */; };
-		BA9EB22B2A9CAFF600149C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2292A9CAFF600149C46 /* Main.storyboard */; };
 		BA9EB22D2A9CAFF800149C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB22C2A9CAFF800149C46 /* Assets.xcassets */; };
 		BA9EB2302A9CAFF800149C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB22E2A9CAFF800149C46 /* LaunchScreen.storyboard */; };
+		BA9EB2372A9CDA5900149C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2362A9CDA5900149C46 /* Main.storyboard */; };
+		BA9EB23E2A9CDA6A00149C46 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB2392A9CDA6A00149C46 /* SoundPlayer.swift */; };
+		BA9EB23F2A9CDA6A00149C46 /* UserSavingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB23A2A9CDA6A00149C46 /* UserSavingsService.swift */; };
+		BA9EB2402A9CDA6A00149C46 /* Int+withAbbreviations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB23B2A9CDA6A00149C46 /* Int+withAbbreviations.swift */; };
+		BA9EB2412A9CDA6A00149C46 /* ImpactFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB23C2A9CDA6A00149C46 /* ImpactFeedback.swift */; };
+		BA9EB2422A9CDA6A00149C46 /* Double+withAbbreviations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB23D2A9CDA6A00149C46 /* Double+withAbbreviations.swift */; };
+		BA9EB24B2A9CDA7300149C46 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2442A9CDA7300149C46 /* Inter-Bold.ttf */; };
+		BA9EB24C2A9CDA7300149C46 /* retro-land-mayhem.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2452A9CDA7300149C46 /* retro-land-mayhem.ttf */; };
+		BA9EB24D2A9CDA7300149C46 /* Gotham Pro Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2462A9CDA7300149C46 /* Gotham Pro Bold.ttf */; };
+		BA9EB24E2A9CDA7300149C46 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2472A9CDA7300149C46 /* background.mp3 */; };
+		BA9EB24F2A9CDA7300149C46 /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2482A9CDA7300149C46 /* snow.sks */; };
+		BA9EB2502A9CDA7300149C46 /* bomb.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2492A9CDA7300149C46 /* bomb.sks */; };
+		BA9EB2552A9CDA8000149C46 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2532A9CDA8000149C46 /* GameScene.sks */; };
+		BA9EB2562A9CDA8000149C46 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB2542A9CDA8000149C46 /* GameScene.swift */; };
+		BA9EB2582A9CDA8600149C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB2572A9CDA8600149C46 /* AppDelegate.swift */; };
+		BA9EB2612A9CDA9400149C46 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB25A2A9CDA9400149C46 /* ShopView.swift */; };
+		BA9EB2622A9CDA9400149C46 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB25B2A9CDA9400149C46 /* SettingsView.swift */; };
+		BA9EB2632A9CDA9400149C46 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB25C2A9CDA9400149C46 /* GameViewController.swift */; };
+		BA9EB2642A9CDA9400149C46 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB25D2A9CDA9400149C46 /* LoaderViewController.swift */; };
+		BA9EB2652A9CDA9400149C46 /* BonusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB25E2A9CDA9400149C46 /* BonusView.swift */; };
+		BA9EB2662A9CDA9400149C46 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB25F2A9CDA9400149C46 /* GameOverView.swift */; };
+		BA9EB2672A9CDA9400149C46 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB2602A9CDA9400149C46 /* MenuView.swift */; };
+		BA9EB2692A9CDAFF00149C46 /* load.json in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2682A9CDAFF00149C46 /* load.json */; };
+		BA9EB26C2A9CDB2400149C46 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = BA9EB26B2A9CDB2400149C46 /* Introspect */; };
+		BA9EB26F2A9CDB9A00149C46 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BA9EB26E2A9CDB9A00149C46 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA9EB21C2A9CAFF600149C46 /* Sultan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sultan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA9EB21F2A9CAFF600149C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA9EB2212A9CAFF600149C46 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		BA9EB2232A9CAFF600149C46 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		BA9EB2252A9CAFF600149C46 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		BA9EB2272A9CAFF600149C46 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		BA9EB22A2A9CAFF600149C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA9EB22C2A9CAFF800149C46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA9EB22F2A9CAFF800149C46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BA9EB2362A9CDA5900149C46 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BA9EB2392A9CDA6A00149C46 /* SoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		BA9EB23A2A9CDA6A00149C46 /* UserSavingsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSavingsService.swift; sourceTree = "<group>"; };
+		BA9EB23B2A9CDA6A00149C46 /* Int+withAbbreviations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+withAbbreviations.swift"; sourceTree = "<group>"; };
+		BA9EB23C2A9CDA6A00149C46 /* ImpactFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImpactFeedback.swift; sourceTree = "<group>"; };
+		BA9EB23D2A9CDA6A00149C46 /* Double+withAbbreviations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+withAbbreviations.swift"; sourceTree = "<group>"; };
+		BA9EB2442A9CDA7300149C46 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		BA9EB2452A9CDA7300149C46 /* retro-land-mayhem.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "retro-land-mayhem.ttf"; sourceTree = "<group>"; };
+		BA9EB2462A9CDA7300149C46 /* Gotham Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Pro Bold.ttf"; sourceTree = "<group>"; };
+		BA9EB2472A9CDA7300149C46 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+		BA9EB2482A9CDA7300149C46 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
+		BA9EB2492A9CDA7300149C46 /* bomb.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bomb.sks; sourceTree = "<group>"; };
+		BA9EB2532A9CDA8000149C46 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		BA9EB2542A9CDA8000149C46 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		BA9EB2572A9CDA8600149C46 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BA9EB25A2A9CDA9400149C46 /* ShopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		BA9EB25B2A9CDA9400149C46 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BA9EB25C2A9CDA9400149C46 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		BA9EB25D2A9CDA9400149C46 /* LoaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		BA9EB25E2A9CDA9400149C46 /* BonusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BonusView.swift; sourceTree = "<group>"; };
+		BA9EB25F2A9CDA9400149C46 /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		BA9EB2602A9CDA9400149C46 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		BA9EB2682A9CDAFF00149C46 /* load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = load.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9EB26C2A9CDB2400149C46 /* Introspect in Frameworks */,
+				BA9EB26F2A9CDB9A00149C46 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,16 +97,65 @@
 		BA9EB21E2A9CAFF600149C46 /* Sultan */ = {
 			isa = PBXGroup;
 			children = (
-				BA9EB21F2A9CAFF600149C46 /* AppDelegate.swift */,
-				BA9EB2212A9CAFF600149C46 /* GameScene.sks */,
-				BA9EB2232A9CAFF600149C46 /* Actions.sks */,
-				BA9EB2252A9CAFF600149C46 /* GameScene.swift */,
-				BA9EB2272A9CAFF600149C46 /* GameViewController.swift */,
-				BA9EB2292A9CAFF600149C46 /* Main.storyboard */,
 				BA9EB22C2A9CAFF800149C46 /* Assets.xcassets */,
+				BA9EB2572A9CDA8600149C46 /* AppDelegate.swift */,
+				BA9EB2382A9CDA6A00149C46 /* Services */,
+				BA9EB2432A9CDA7300149C46 /* Resources */,
+				BA9EB2522A9CDA8000149C46 /* Game */,
+				BA9EB2592A9CDA9400149C46 /* Pages */,
+				BA9EB2362A9CDA5900149C46 /* Main.storyboard */,
 				BA9EB22E2A9CAFF800149C46 /* LaunchScreen.storyboard */,
 			);
 			path = Sultan;
+			sourceTree = "<group>";
+		};
+		BA9EB2382A9CDA6A00149C46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BA9EB2392A9CDA6A00149C46 /* SoundPlayer.swift */,
+				BA9EB23A2A9CDA6A00149C46 /* UserSavingsService.swift */,
+				BA9EB23B2A9CDA6A00149C46 /* Int+withAbbreviations.swift */,
+				BA9EB23C2A9CDA6A00149C46 /* ImpactFeedback.swift */,
+				BA9EB23D2A9CDA6A00149C46 /* Double+withAbbreviations.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BA9EB2432A9CDA7300149C46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BA9EB2442A9CDA7300149C46 /* Inter-Bold.ttf */,
+				BA9EB2452A9CDA7300149C46 /* retro-land-mayhem.ttf */,
+				BA9EB2462A9CDA7300149C46 /* Gotham Pro Bold.ttf */,
+				BA9EB2472A9CDA7300149C46 /* background.mp3 */,
+				BA9EB2482A9CDA7300149C46 /* snow.sks */,
+				BA9EB2492A9CDA7300149C46 /* bomb.sks */,
+				BA9EB2682A9CDAFF00149C46 /* load.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BA9EB2522A9CDA8000149C46 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				BA9EB2532A9CDA8000149C46 /* GameScene.sks */,
+				BA9EB2542A9CDA8000149C46 /* GameScene.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		BA9EB2592A9CDA9400149C46 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				BA9EB25A2A9CDA9400149C46 /* ShopView.swift */,
+				BA9EB25B2A9CDA9400149C46 /* SettingsView.swift */,
+				BA9EB25C2A9CDA9400149C46 /* GameViewController.swift */,
+				BA9EB25D2A9CDA9400149C46 /* LoaderViewController.swift */,
+				BA9EB25E2A9CDA9400149C46 /* BonusView.swift */,
+				BA9EB25F2A9CDA9400149C46 /* GameOverView.swift */,
+				BA9EB2602A9CDA9400149C46 /* MenuView.swift */,
+			);
+			path = Pages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +174,10 @@
 			dependencies = (
 			);
 			name = Sultan;
+			packageProductDependencies = (
+				BA9EB26B2A9CDB2400149C46 /* Introspect */,
+				BA9EB26E2A9CDB9A00149C46 /* Lottie */,
+			);
 			productName = Sultan;
 			productReference = BA9EB21C2A9CAFF600149C46 /* Sultan.app */;
 			productType = "com.apple.product-type.application";
@@ -115,6 +206,10 @@
 				Base,
 			);
 			mainGroup = BA9EB2132A9CAFF600149C46;
+			packageReferences = (
+				BA9EB26A2A9CDB2400149C46 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				BA9EB26D2A9CDB9A00149C46 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = BA9EB21D2A9CAFF600149C46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,11 +224,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9EB22B2A9CAFF600149C46 /* Main.storyboard in Resources */,
-				BA9EB2222A9CAFF600149C46 /* GameScene.sks in Resources */,
+				BA9EB2692A9CDAFF00149C46 /* load.json in Resources */,
+				BA9EB2372A9CDA5900149C46 /* Main.storyboard in Resources */,
 				BA9EB22D2A9CAFF800149C46 /* Assets.xcassets in Resources */,
+				BA9EB2502A9CDA7300149C46 /* bomb.sks in Resources */,
+				BA9EB2552A9CDA8000149C46 /* GameScene.sks in Resources */,
+				BA9EB24B2A9CDA7300149C46 /* Inter-Bold.ttf in Resources */,
+				BA9EB24D2A9CDA7300149C46 /* Gotham Pro Bold.ttf in Resources */,
 				BA9EB2302A9CAFF800149C46 /* LaunchScreen.storyboard in Resources */,
-				BA9EB2242A9CAFF600149C46 /* Actions.sks in Resources */,
+				BA9EB24E2A9CDA7300149C46 /* background.mp3 in Resources */,
+				BA9EB24F2A9CDA7300149C46 /* snow.sks in Resources */,
+				BA9EB24C2A9CDA7300149C46 /* retro-land-mayhem.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,23 +245,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA9EB2262A9CAFF600149C46 /* GameScene.swift in Sources */,
-				BA9EB2282A9CAFF600149C46 /* GameViewController.swift in Sources */,
-				BA9EB2202A9CAFF600149C46 /* AppDelegate.swift in Sources */,
+				BA9EB2652A9CDA9400149C46 /* BonusView.swift in Sources */,
+				BA9EB2632A9CDA9400149C46 /* GameViewController.swift in Sources */,
+				BA9EB2562A9CDA8000149C46 /* GameScene.swift in Sources */,
+				BA9EB2642A9CDA9400149C46 /* LoaderViewController.swift in Sources */,
+				BA9EB2422A9CDA6A00149C46 /* Double+withAbbreviations.swift in Sources */,
+				BA9EB23F2A9CDA6A00149C46 /* UserSavingsService.swift in Sources */,
+				BA9EB2622A9CDA9400149C46 /* SettingsView.swift in Sources */,
+				BA9EB2672A9CDA9400149C46 /* MenuView.swift in Sources */,
+				BA9EB2402A9CDA6A00149C46 /* Int+withAbbreviations.swift in Sources */,
+				BA9EB2582A9CDA8600149C46 /* AppDelegate.swift in Sources */,
+				BA9EB2412A9CDA6A00149C46 /* ImpactFeedback.swift in Sources */,
+				BA9EB2612A9CDA9400149C46 /* ShopView.swift in Sources */,
+				BA9EB2662A9CDA9400149C46 /* GameOverView.swift in Sources */,
+				BA9EB23E2A9CDA6A00149C46 /* SoundPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BA9EB2292A9CAFF600149C46 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA9EB22A2A9CAFF600149C46 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BA9EB22E2A9CAFF800149C46 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -301,6 +405,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,9 +413,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfriedrix.Sultan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -329,6 +437,7 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,9 +445,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pfriedrix.Sultan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -364,6 +476,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BA9EB26A2A9CDB2400149C46 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.1;
+			};
+		};
+		BA9EB26D2A9CDB9A00149C46 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BA9EB26B2A9CDB2400149C46 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA9EB26A2A9CDB2400149C46 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+		BA9EB26E2A9CDB9A00149C46 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BA9EB26D2A9CDB9A00149C46 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA9EB2142A9CAFF600149C46 /* Project object */;
 }
