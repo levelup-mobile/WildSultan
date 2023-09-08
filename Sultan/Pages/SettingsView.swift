@@ -22,96 +22,85 @@ struct SettingsView: View {
     
     var body: some View {
         VStack {
-            VStack(spacing: 10) {
-                Text("SETTINGS")
-                    .foregroundColor(.white)
-                    .bold()
-                    .font(.custom("Inter", size: 42))
-                    .padding()
-                    .padding(.bottom, 20)
+            VStack(spacing: 0) {
                 HStack {
-                    Text("Sound")
-                        .font(.custom("Inter", size: 24))
-                        .foregroundColor(.white)
-                        .bold()
-                        .padding(.horizontal)
-                    Spacer()
-                    Button {
-                        sound.toggle()
-                        SoundPlayer.shared.playClick()
-                        ImpactFeedback.shared.makeImpackFeedback(.medium)
-                    } label: {
-                        ZStack {
-                            Image(sound ? "off" : "on")
-                                .resizable()
-                                .frame(width: 20, height: 20)
-                                .padding(.top, 1)
-                                .offset(x: sound ? -10 : 10)
-                        }
-                        .background {
-                            Image("bg-picker")
-                                .resizable()
-                                .frame(width: 50, height: 30)
+                    VStack {
+                        Text("Sound")
+                            .font(.custom("JejuHallasan", size: 24))
+                            .foregroundColor(.white)
+                            .bold()
+                            .padding(.horizontal)
+                        Button {
+                            sound.toggle()
+                            SoundPlayer.shared.playClick()
+                            ImpactFeedback.shared.makeImpackFeedback(.medium)
+                        } label: {
+                            ZStack {
+                                Image(sound ? "off" : "on")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .padding(.top, 1)
+                                    .offset(x: sound ? -10 : 10)
+                            }
+                            .background {
+                                Image("bg-picker")
+                                    .resizable()
+                                    .frame(width: 50, height: 30)
+                            }
                         }
                     }
-                    .padding(.horizontal, 20)
+                    VStack {
+                        Text("Music")
+                            .font(.custom("JejuHallasan", size: 24))
+                            .foregroundColor(.white)
+                            .bold()
+                            .padding(.horizontal)
+                        Button {
+                            music.toggle()
+                            SoundPlayer.shared.playClick()
+                            ImpactFeedback.shared.makeImpackFeedback(.medium)
+                            SoundPlayer.shared.playBackgroundMusic()
+                        } label: {
+                            ZStack {
+                                Image(music ? "off" : "on")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .padding(.top, 1)
+                                    .offset(x: music ? -10 : 10)
+                            }
+                            .background {
+                                Image("bg-picker")
+                                    .resizable()
+                                    .frame(width: 50, height: 30)
+                            }
+                        }
+                    }
+                    VStack {
+                        Text("Vibrations")
+                            .font(.custom("JejuHallasan", size: 24))
+                            .foregroundColor(.white)
+                            .bold()
+                            .padding(.horizontal)
+                        Button {
+                            vibrations.toggle()
+                            SoundPlayer.shared.playClick()
+                            ImpactFeedback.shared.makeImpackFeedback(.medium)
+                        } label: {
+                            ZStack {
+                                Image(vibrations ? "off" : "on")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .padding(.top, 1)
+                                    .offset(x: vibrations ? -10 : 10)
+                            }
+                            .background {
+                                Image("bg-picker")
+                                    .resizable()
+                                    .frame(width: 50, height: 30)
+                            }
+                        }
+                    }
                 }
-                .padding(.horizontal)
-                HStack {
-                    Text("Music")
-                        .font(.custom("Inter", size: 24))
-                        .foregroundColor(.white)
-                        .bold()
-                        .padding(.horizontal)
-                    Spacer()
-                    Button {
-                        music.toggle()
-                        SoundPlayer.shared.playClick()
-                        ImpactFeedback.shared.makeImpackFeedback(.medium)
-                        SoundPlayer.shared.playBackgroundMusic()
-                    } label: {
-                        ZStack {
-                            Image(music ? "off" : "on")
-                                .resizable()
-                                .frame(width: 20, height: 20)
-                                .padding(.top, 1)
-                                .offset(x: music ? -10 : 10)
-                        }
-                        .background {
-                            Image("bg-picker")
-                                .resizable()
-                                .frame(width: 50, height: 30)
-                        }
-                    }.padding(.horizontal, 20)
-                }
-                .padding(.horizontal)
-                HStack {
-                    Text("Vibrations")
-                        .font(.custom("Inter", size: 24))
-                        .foregroundColor(.white)
-                        .bold()
-                        .padding(.horizontal)
-                    Spacer()
-                    Button {
-                        vibrations.toggle()
-                        SoundPlayer.shared.playClick()
-                        ImpactFeedback.shared.makeImpackFeedback(.medium)
-                    } label: {
-                        ZStack {
-                            Image(vibrations ? "off" : "on")
-                                .resizable()
-                                .frame(width: 20, height: 20)
-                                .padding(.top, 1)
-                                .offset(x: vibrations ? -10 : 10)
-                        }
-                        .background {
-                            Image("bg-picker")
-                                .resizable()
-                                .frame(width: 50, height: 30)
-                        }
-                    }.padding(.horizontal, 20)
-                }
-                .padding(.horizontal)
                 Button {
                     guard let url = URL(string: "https://astonishing-forger-248.notion.site/Privacy-Policy-30d3167e696e49f49122ae984609171e?pvs=4") else { return }
                     UIApplication.shared.open(url)
@@ -120,12 +109,12 @@ struct SettingsView: View {
                 } label: {
                     Text("privacy policy".uppercased())
                         .foregroundColor(.white)
-                        .font(.custom("Inter", size: 24))
+                        .underline()
+                        .font(.custom("JejuHallasan", size: 18))
                 }
-                .padding()
-                .padding(.top, 20)
+                .padding(.top, 30)
             }
-            .frame(width: 300, height: 300)
+            .frame(width: 400, height: 200)
             .background {
                 Image("bg-stack")
                     .resizable()
@@ -149,7 +138,7 @@ struct SettingsView: View {
                     SoundPlayer.shared.playClick()
                     ImpactFeedback.shared.makeImpackFeedback(.medium)
                 } label: {
-                    Image("backButton")
+                    Image("buttonBack")
                         .resizable()
                         .frame(width: 40, height: 40)
                 }

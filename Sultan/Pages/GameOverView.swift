@@ -18,17 +18,17 @@ struct GameOverView: View {
                 Spacer()
                 Text("GAME OVER")
                     .foregroundColor(.orange)
-                    .font(.custom("Inter", size: 32))
+                    .font(.custom("JejuHallasan", size: 32))
                 Spacer()
                 if isWin == .draw {
                     Text("DRAW")
                         .foregroundColor(.gray)
-                        .font(.custom("Inter", size: 28))
+                        .font(.custom("JejuHallasan", size: 28))
                         .bold()
                 } else {
                     Text(isWin == .first ? "PLAYER 1 WIN": "PLAYER 1 WIN")
                         .foregroundColor(.gray)
-                        .font(.custom("Inter", size: 22))
+                        .font(.custom("JejuHallasan", size: 22))
                         .bold()
                 }
                 Spacer()
@@ -43,7 +43,7 @@ struct GameOverView: View {
                                 .resizable()
                             Text("MENU")
                                 .foregroundColor(.white)
-                                .font(.custom("Inter", size: 22))
+                                .font(.custom("JejuHallasan", size: 22))
                                 .padding(.bottom, 8)
                                 .padding(.trailing, 10)
                         }
@@ -61,7 +61,7 @@ struct GameOverView: View {
                                 .resizable()
                             Text("PLAY AGAIN")
                                 .foregroundColor(.white)
-                                .font(.custom("Inter", size: 22))
+                                .font(.custom("JejuHallasan", size: 22))
                                 .padding(.bottom, 8)
                                 .padding(.trailing, 10)
                         }

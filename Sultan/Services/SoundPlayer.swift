@@ -3,7 +3,7 @@ import AVFoundation
 class SoundPlayer {
     static var shared = SoundPlayer()
     
-    var player: AVAudioPlayer?
+    var player = AVAudioPlayer()
     
     func playClick() {
         guard
@@ -28,9 +28,9 @@ class SoundPlayer {
         
         do {
             
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            player?.setVolume(0.3, fadeDuration: 0.5)
-            player?.play()
+            let player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            player.setVolume(0.3, fadeDuration: 0.5)
+            player.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -44,9 +44,9 @@ class SoundPlayer {
         
         do {
             
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            player?.setVolume(0.6, fadeDuration: 0.5)
-            player?.play()
+            let player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            player.setVolume(0.6, fadeDuration: 0.5)
+            player.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -59,9 +59,9 @@ class SoundPlayer {
         else { return }
         
         do {
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            player?.setVolume(0.6, fadeDuration: 0.5)
-            player?.play()
+            let player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            player.setVolume(0.6, fadeDuration: 0.5)
+            player.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -84,9 +84,9 @@ class SoundPlayer {
         else { return }
         do {
             
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            player?.setVolume(0.6, fadeDuration: 0.5)
-            player?.play()
+            let player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            player.setVolume(0.6, fadeDuration: 0.5)
+            player.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -99,9 +99,9 @@ class SoundPlayer {
         else { return }
         do {
             
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            player?.setVolume(0.6, fadeDuration: 0.5)
-            player?.play()
+            let player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            player.setVolume(0.6, fadeDuration: 0.5)
+            player.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -114,9 +114,9 @@ class SoundPlayer {
         else { return }
         do {
             
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            player?.setVolume(0.6, fadeDuration: 0.5)
-            player?.play()
+            let player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
+            player.setVolume(0.6, fadeDuration: 0.5)
+            player.play()
             
         } catch let error {
             print(error.localizedDescription)
@@ -125,15 +125,17 @@ class SoundPlayer {
     
     func playBackgroundMusic() {
         guard
-            let url = Bundle.main.url(forResource: "background", withExtension: "mp3"),
-            UserSavingsService.shared.music
-        else { return }
+            UserSavingsService.shared.music,
+            let url = Bundle.main.url(forResource: "background", withExtension: "mp3")
+        else {
+            player.setVolume(0.0, fadeDuration: 0.5)
+            return }
         do {
             
             player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.wav.rawValue)
-            player?.setVolume(UserSavingsService.shared.music ? 0.4 : 0.0, fadeDuration: 0.5)
-            player?.numberOfLoops = -1
-            player?.play()
+            player.setVolume(0.4, fadeDuration: 0.5)
+            player.numberOfLoops = -1
+            player.play()
     
         } catch let error {
             print(error.localizedDescription)

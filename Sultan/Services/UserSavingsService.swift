@@ -22,11 +22,6 @@ class UserSavingsService {
         
         set {
             UserDefaults.standard.set(newValue, forKey: "sound")
-            if newValue {
-                SoundPlayer.shared.player?.setVolume(0.3, fadeDuration: 0.5)
-            } else {
-                SoundPlayer.shared.player?.setVolume(0.0, fadeDuration: 0.5)
-            }
         }
     }
     
@@ -37,11 +32,6 @@ class UserSavingsService {
         
         set {
             UserDefaults.standard.set(newValue, forKey: "music")
-            if newValue {
-                SoundPlayer.shared.player?.setVolume(0.3, fadeDuration: 0.5)
-            } else {
-                SoundPlayer.shared.player?.setVolume(0.0, fadeDuration: 0.5)
-            }
         }
     }
     
@@ -134,9 +124,9 @@ class UserSavingsService {
     
     init () {
         UserDefaults.standard.register(defaults: ["money": 100])
-        UserDefaults.standard.register(defaults: ["sound": false])
-        UserDefaults.standard.register(defaults: ["music": false])
-        UserDefaults.standard.register(defaults: ["vibrations": false])
+        UserDefaults.standard.register(defaults: ["sound": true])
+        UserDefaults.standard.register(defaults: ["music": true])
+        UserDefaults.standard.register(defaults: ["vibrations": true])
         UserDefaults.standard.register(defaults: ["lastTimeGetBonus": Date(timeIntervalSince1970: 0)])
         UserDefaults.standard.register(defaults: ["item": 1])
         UserDefaults.standard.register(defaults: ["gate": 1])

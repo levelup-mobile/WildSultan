@@ -34,6 +34,7 @@
 		BA9EB2692A9CDAFF00149C46 /* load.json in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2682A9CDAFF00149C46 /* load.json */; };
 		BA9EB26C2A9CDB2400149C46 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = BA9EB26B2A9CDB2400149C46 /* Introspect */; };
 		BA9EB26F2A9CDB9A00149C46 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BA9EB26E2A9CDB9A00149C46 /* Lottie */; };
+		BAC5515B2AAB20370005226E /* JejuHallasan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAC5515A2AAB20370005226E /* JejuHallasan-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,8 @@
 		BA9EB25F2A9CDA9400149C46 /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		BA9EB2602A9CDA9400149C46 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BA9EB2682A9CDAFF00149C46 /* load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = load.json; sourceTree = "<group>"; };
+		BAC5515A2AAB20370005226E /* JejuHallasan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JejuHallasan-Regular.ttf"; sourceTree = "<group>"; };
+		BAC5515C2AAB204E0005226E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,7 @@
 		BA9EB21E2A9CAFF600149C46 /* Sultan */ = {
 			isa = PBXGroup;
 			children = (
+				BAC5515C2AAB204E0005226E /* Info.plist */,
 				BA9EB22C2A9CAFF800149C46 /* Assets.xcassets */,
 				BA9EB2572A9CDA8600149C46 /* AppDelegate.swift */,
 				BA9EB2382A9CDA6A00149C46 /* Services */,
@@ -124,6 +128,7 @@
 		BA9EB2432A9CDA7300149C46 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BAC5515A2AAB20370005226E /* JejuHallasan-Regular.ttf */,
 				BA9EB2442A9CDA7300149C46 /* Inter-Bold.ttf */,
 				BA9EB2452A9CDA7300149C46 /* retro-land-mayhem.ttf */,
 				BA9EB2462A9CDA7300149C46 /* Gotham Pro Bold.ttf */,
@@ -233,6 +238,7 @@
 				BA9EB24D2A9CDA7300149C46 /* Gotham Pro Bold.ttf in Resources */,
 				BA9EB2302A9CAFF800149C46 /* LaunchScreen.storyboard in Resources */,
 				BA9EB24E2A9CDA7300149C46 /* background.mp3 in Resources */,
+				BAC5515B2AAB20370005226E /* JejuHallasan-Regular.ttf in Resources */,
 				BA9EB24F2A9CDA7300149C46 /* snow.sks in Resources */,
 				BA9EB24C2A9CDA7300149C46 /* retro-land-mayhem.ttf in Resources */,
 			);
@@ -399,6 +405,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M95CCRL636;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sultan/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -431,6 +438,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M95CCRL636;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sultan/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

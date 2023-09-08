@@ -16,7 +16,7 @@ struct BonusView: View {
                 VStack {
                     Spacer()
                     Text("DAILY\nBONUS")
-                        .font(.custom("Inter", size: 42))
+                        .font(.custom("JejuHallasan", size: 42))
                         .foregroundColor(.orange)
                         .multilineTextAlignment(.center)
                     Spacer()
@@ -30,7 +30,7 @@ struct BonusView: View {
                             Text("+\(money)")
                                 .bold()
                                 .foregroundColor(.orange)
-                                .font(.custom("Inter", size: 42))
+                                .font(.custom("JejuHallasan", size: 42))
                         }
                         .padding(.horizontal)
                         Spacer()
@@ -48,7 +48,7 @@ struct BonusView: View {
                                     .frame(width: 200, height: 70)
                                 Text("GET")
                                     .foregroundColor(.white)
-                                    .font(.custom("Inter", size: 29))
+                                    .font(.custom("JejuHallasan", size: 29))
                                     .padding(.bottom, 10)
                                     .padding(.trailing, 8)
                             }
@@ -62,7 +62,7 @@ struct BonusView: View {
                         Spacer()
                         Text("TAP TO OPEN")
                             .foregroundColor(.white)
-                            .font(.custom("Inter", size: 28))
+                            .font(.custom("JejuHallasan", size: 28))
                     }
                 }
             }

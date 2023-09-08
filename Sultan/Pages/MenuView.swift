@@ -36,16 +36,6 @@ struct MenuView: View {
                         .resizable()
                         .frame(width: 200, height: 70)
                 }
-                Button {
-                    let vc = UIHostingController(rootView: SettingsView())
-                    nc?.pushViewController(vc, animated: true)
-                    SoundPlayer.shared.playClick()
-                    ImpactFeedback.shared.makeImpackFeedback(.medium)
-                } label: {
-                    Image("buttonSettings")
-                        .resizable()
-                        .frame(width: 200, height: 70)
-                }
             }
             Spacer()
         }
@@ -61,19 +51,32 @@ struct MenuView: View {
                 .resizable()
                 .ignoresSafeArea()
         )
-        .overlay(alignment: .topTrailing) {
-            if canShowBonus {
+        .overlay(alignment: .topLeading) {
+            VStack(spacing: 0) {
                 Button {
-                    let vc = UIHostingController(rootView: BonusView(canGetBonus: $canShowBonus))
+                    let vc = UIHostingController(rootView: SettingsView())
                     nc?.pushViewController(vc, animated: true)
                     SoundPlayer.shared.playClick()
                     ImpactFeedback.shared.makeImpackFeedback(.medium)
                 } label: {
-                    Image("gift")
+                    Image("buttonSettings")
                         .resizable()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 50, height: 50)
+                }
+                if canShowBonus {
+                    Button {
+                        let vc = UIHostingController(rootView: BonusView(canGetBonus: $canShowBonus))
+                        nc?.pushViewController(vc, animated: true)
+                        SoundPlayer.shared.playClick()
+                        ImpactFeedback.shared.makeImpackFeedback(.medium)
+                    } label: {
+                        Image("buttonGift")
+                            .resizable()
+                            .frame(width: 75, height: 75)
+                    }
                 }
             }
+            .padding()
         }
         .onAppear {
             canShowBonus = UserSavingsService.shared.canGetBonus
