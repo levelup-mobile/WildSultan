@@ -16,185 +16,23 @@
         <!--Game View Controller-->
         <scene sceneID="6zw-a1-z5A">
             <objects>
-                <viewController storyboardIdentifier="game" id="kSt-tV-Y7n" customClass="GameViewController" customModule="CrounCasino" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="game" id="kSt-tV-Y7n" customClass="GameViewController" customModule="Sultan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="FsB-Xv-pm1" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5x3-aG-peR">
-                                <rect key="frame" x="64" y="322" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Y5Z-4j-NJQ"/>
-                                    <constraint firstAttribute="height" constant="50" id="zG9-Ex-OII"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonLeft"/>
-                                <connections>
-                                    <action selector="leftEnd:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="PjB-4d-K8p"/>
-                                    <action selector="leftStart:" destination="kSt-tV-Y7n" eventType="touchDown" id="fIE-Na-xu2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gON-V5-zKm">
-                                <rect key="frame" x="64" y="264" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="LCF-oh-Tzq"/>
-                                    <constraint firstAttribute="height" constant="50" id="xhJ-Uq-Nlf"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonJump"/>
-                                <connections>
-                                    <action selector="jump:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="AjA-Xg-X9U"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AI5-B6-MVg">
-                                <rect key="frame" x="738" y="264" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Lcn-7K-2Us"/>
-                                    <constraint firstAttribute="width" constant="50" id="iVT-cy-OUq"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonJump"/>
-                                <connections>
-                                    <action selector="jump2:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="CUb-zB-ReV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZB-ha-dev">
-                                <rect key="frame" x="122" y="322" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="2S4-3I-AtY"/>
-                                    <constraint firstAttribute="width" constant="50" id="kUR-t2-Ne2"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonRight"/>
-                                <connections>
-                                    <action selector="rightEnd:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="XsV-gI-CDj"/>
-                                    <action selector="rightStart:" destination="kSt-tV-Y7n" eventType="touchDown" id="fNY-f1-M4H"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sub-j7-ma0">
-                                <rect key="frame" x="180" y="322" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="VeC-Js-nTJ"/>
-                                    <constraint firstAttribute="width" constant="50" id="dDo-i8-baf"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonBomb"/>
-                                <connections>
-                                    <action selector="bomb:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="zFZ-yb-feN"/>
-                                    <action selector="bombStart:" destination="kSt-tV-Y7n" eventType="touchDown" id="YNa-WT-x4e"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jjM-1e-7Tj">
-                                <rect key="frame" x="238" y="322" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Kvk-T9-jJm"/>
-                                    <constraint firstAttribute="height" constant="50" id="hb2-U5-83O"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonSnow"/>
-                                <connections>
-                                    <action selector="snow:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="6yc-Mf-ya1"/>
-                                    <action selector="snowStart:" destination="kSt-tV-Y7n" eventType="touchDown" id="Gb4-ix-Pc5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdd-jC-aqq">
-                                <rect key="frame" x="680" y="322" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="RJc-48-rRk"/>
-                                    <constraint firstAttribute="height" constant="50" id="lfN-4l-6g0"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonLeft"/>
-                                <connections>
-                                    <action selector="leftEnd2:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="wnm-py-lUB"/>
-                                    <action selector="leftStart2:" destination="kSt-tV-Y7n" eventType="touchDown" id="ZhH-ga-7Yl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piG-WV-iz3">
-                                <rect key="frame" x="622" y="322" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="bRv-03-VpL"/>
-                                    <constraint firstAttribute="height" constant="50" id="ezR-LQ-G5H"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonBomb"/>
-                                <connections>
-                                    <action selector="bomb2:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="Xvz-Aa-jTc"/>
-                                    <action selector="bomb2Start:" destination="kSt-tV-Y7n" eventType="touchDown" id="bzh-tP-77y"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6W-C6-1l1">
-                                <rect key="frame" x="738" y="322" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="XMQ-wj-LYx"/>
-                                    <constraint firstAttribute="height" constant="50" id="ldd-Mb-NgN"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonRight"/>
-                                <connections>
-                                    <action selector="rightEnd2:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="sYx-w2-l5G"/>
-                                    <action selector="rightStart2:" destination="kSt-tV-Y7n" eventType="touchDown" id="dYp-eD-pEo"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3E-dg-ZzJ">
                                 <rect key="frame" x="395" y="10" width="62" height="41.333333333333336"/>
                                 <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrX-mk-ctE">
-                                <rect key="frame" x="564" y="322" width="50" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Qtc-cD-8Bw"/>
-                                    <constraint firstAttribute="width" constant="50" id="tie-hM-gty"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonSnow"/>
-                                <connections>
-                                    <action selector="snow2:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="TXu-GF-uGu"/>
-                                    <action selector="snow2Start:" destination="kSt-tV-Y7n" eventType="touchDown" id="rif-wB-MB8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzf-L5-DqG">
-                                <rect key="frame" x="351" y="317" width="150" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="LRt-yf-Gte"/>
-                                    <constraint firstAttribute="height" constant="70" id="NcC-ha-YfD"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" backgroundImage="buttonExit"/>
-                                <connections>
-                                    <action selector="pause:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="QbS-6J-InE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sCC-p7-m8f"/>
                         <color key="backgroundColor" red="0.42641299960000001" green="0.60534566639999998" blue="0.20192193980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Wzf-L5-DqG" firstAttribute="centerX" secondItem="FsB-Xv-pm1" secondAttribute="centerX" id="0UU-Lj-jwI"/>
-                            <constraint firstItem="sCC-p7-m8f" firstAttribute="bottom" secondItem="piG-WV-iz3" secondAttribute="bottom" id="2Lw-cK-2V5"/>
-                            <constraint firstItem="gON-V5-zKm" firstAttribute="leading" secondItem="sCC-p7-m8f" secondAttribute="leading" constant="5" id="6Ci-HE-afr"/>
-                            <constraint firstItem="5x3-aG-peR" firstAttribute="leading" secondItem="sCC-p7-m8f" secondAttribute="leading" constant="5" id="Bad-GW-9Bz"/>
-                            <constraint firstItem="sCC-p7-m8f" firstAttribute="trailing" secondItem="q6W-C6-1l1" secondAttribute="trailing" constant="5" id="F2d-Gb-SLx"/>
-                            <constraint firstItem="5x3-aG-peR" firstAttribute="bottom" secondItem="sCC-p7-m8f" secondAttribute="bottom" id="I53-p1-kLY"/>
-                            <constraint firstItem="jjM-1e-7Tj" firstAttribute="leading" secondItem="sub-j7-ma0" secondAttribute="trailing" constant="8" symbolic="YES" id="IAs-H1-aOs"/>
-                            <constraint firstItem="sub-j7-ma0" firstAttribute="leading" secondItem="uZB-ha-dev" secondAttribute="trailing" constant="8" symbolic="YES" id="L4V-VM-j4Q"/>
-                            <constraint firstItem="sCC-p7-m8f" firstAttribute="bottom" secondItem="MrX-mk-ctE" secondAttribute="bottom" id="Qs4-FL-ZAX"/>
-                            <constraint firstItem="q6W-C6-1l1" firstAttribute="leading" secondItem="cdd-jC-aqq" secondAttribute="trailing" constant="8" symbolic="YES" id="Wvp-IS-JDF"/>
                             <constraint firstItem="e3E-dg-ZzJ" firstAttribute="top" secondItem="sCC-p7-m8f" secondAttribute="top" constant="10" id="XBa-VJ-fpv"/>
-                            <constraint firstItem="cdd-jC-aqq" firstAttribute="leading" secondItem="piG-WV-iz3" secondAttribute="trailing" constant="8" symbolic="YES" id="XfZ-cA-9H6"/>
-                            <constraint firstItem="uZB-ha-dev" firstAttribute="bottom" secondItem="sCC-p7-m8f" secondAttribute="bottom" id="aAr-QD-u3N"/>
-                            <constraint firstItem="sCC-p7-m8f" firstAttribute="bottom" secondItem="cdd-jC-aqq" secondAttribute="bottom" id="cp3-KH-NNi"/>
-                            <constraint firstItem="piG-WV-iz3" firstAttribute="leading" secondItem="MrX-mk-ctE" secondAttribute="trailing" constant="8" symbolic="YES" id="d3N-Qk-02S"/>
-                            <constraint firstItem="sCC-p7-m8f" firstAttribute="trailing" secondItem="AI5-B6-MVg" secondAttribute="trailing" constant="5" id="eWb-Qt-TGa"/>
-                            <constraint firstItem="q6W-C6-1l1" firstAttribute="top" secondItem="AI5-B6-MVg" secondAttribute="bottom" constant="8" symbolic="YES" id="eo3-cz-yE5"/>
-                            <constraint firstItem="sCC-p7-m8f" firstAttribute="bottom" secondItem="Wzf-L5-DqG" secondAttribute="bottom" constant="-15" id="ig8-XJ-Upe"/>
                             <constraint firstItem="e3E-dg-ZzJ" firstAttribute="centerX" secondItem="FsB-Xv-pm1" secondAttribute="centerX" id="mgr-ti-SEG"/>
-                            <constraint firstItem="sCC-p7-m8f" firstAttribute="bottom" secondItem="jjM-1e-7Tj" secondAttribute="bottom" id="mv2-hI-Nea"/>
-                            <constraint firstItem="5x3-aG-peR" firstAttribute="top" secondItem="gON-V5-zKm" secondAttribute="bottom" constant="8" symbolic="YES" id="nHR-5e-3sQ"/>
-                            <constraint firstItem="sCC-p7-m8f" firstAttribute="bottom" secondItem="q6W-C6-1l1" secondAttribute="bottom" id="oRt-8U-7WF"/>
-                            <constraint firstItem="uZB-ha-dev" firstAttribute="leading" secondItem="5x3-aG-peR" secondAttribute="trailing" constant="8" symbolic="YES" id="omx-RF-yOL"/>
-                            <constraint firstItem="sub-j7-ma0" firstAttribute="bottom" secondItem="sCC-p7-m8f" secondAttribute="bottom" id="uld-xd-fmK"/>
                         </constraints>
                     </view>
                     <connections>
@@ -206,12 +44,4 @@
             <point key="canvasLocation" x="760.56338028169023" y="-1367.175572519084"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="buttonBomb" width="188" height="188"/>
-        <image name="buttonExit" width="689" height="289"/>
-        <image name="buttonJump" width="180" height="184"/>
-        <image name="buttonLeft" width="184" height="180"/>
-        <image name="buttonRight" width="184" height="180"/>
-        <image name="buttonSnow" width="224" height="224"/>
-    </resources>
 </document>

@@ -34,6 +34,7 @@
 		BA9EB2692A9CDAFF00149C46 /* load.json in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2682A9CDAFF00149C46 /* load.json */; };
 		BA9EB26C2A9CDB2400149C46 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = BA9EB26B2A9CDB2400149C46 /* Introspect */; };
 		BA9EB26F2A9CDB9A00149C46 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BA9EB26E2A9CDB9A00149C46 /* Lottie */; };
+		BAA517932AAFBE4A0079E300 /* PlayerShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA517922AAFBE4A0079E300 /* PlayerShopView.swift */; };
 		BAC5515B2AAB20370005226E /* JejuHallasan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAC5515A2AAB20370005226E /* JejuHallasan-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		BA9EB25F2A9CDA9400149C46 /* GameOverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 		BA9EB2602A9CDA9400149C46 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BA9EB2682A9CDAFF00149C46 /* load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = load.json; sourceTree = "<group>"; };
+		BAA517922AAFBE4A0079E300 /* PlayerShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerShopView.swift; sourceTree = "<group>"; };
 		BAC5515A2AAB20370005226E /* JejuHallasan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JejuHallasan-Regular.ttf"; sourceTree = "<group>"; };
 		BAC5515C2AAB204E0005226E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 				BA9EB25E2A9CDA9400149C46 /* BonusView.swift */,
 				BA9EB25F2A9CDA9400149C46 /* GameOverView.swift */,
 				BA9EB2602A9CDA9400149C46 /* MenuView.swift */,
+				BAA517922AAFBE4A0079E300 /* PlayerShopView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				BA9EB2582A9CDA8600149C46 /* AppDelegate.swift in Sources */,
 				BA9EB2412A9CDA6A00149C46 /* ImpactFeedback.swift in Sources */,
 				BA9EB2612A9CDA9400149C46 /* ShopView.swift in Sources */,
+				BAA517932AAFBE4A0079E300 /* PlayerShopView.swift in Sources */,
 				BA9EB2662A9CDA9400149C46 /* GameOverView.swift in Sources */,
 				BA9EB23E2A9CDA6A00149C46 /* SoundPlayer.swift in Sources */,
 			);

@@ -24,12 +24,6 @@ struct ShopView: View {
         }
     }
     
-    @State var hero2: Int = UserSavingsService.shared.hero2 {
-        didSet {
-            UserSavingsService.shared.hero2 = hero2
-        }
-    }
-    
     @State var boughtItems = UserSavingsService.shared.boughtItems {
         didSet {
             UserSavingsService.shared.boughtItems = boughtItems

@@ -56,12 +56,17 @@ struct BonusView: View {
                         .disabled(!canGetBonus)
                         .opacity(canGetBonus ? 1 : 0.5)
                     } else {
-                        Image("gift")
-                            .resizable()
-                            .frame(width: 180, height: 180)
+                        ZStack {
+                            Image("bg-shop-stack")
+                                .resizable()
+                            Image("gift")
+                                .resizable()
+                                .padding(60)
+                        }
+                        .frame(width: 180, height: 180)
                         Spacer()
                         Text("TAP TO OPEN")
-                            .foregroundColor(.white)
+                            .foregroundColor(.orange)
                             .font(.custom("JejuHallasan", size: 28))
                     }
                 }
@@ -75,7 +80,7 @@ struct BonusView: View {
         }
         .frame(minWidth: 0, maxWidth: .infinity)
         .background(
-            Image("bg-bonus").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea().scaledToFill()
+            Image("bg-menu").resizable().aspectRatio(contentMode: .fill).ignoresSafeArea().scaledToFill()
         )
         .introspectNavigationController { nc in
             DispatchQueue.main.async {
