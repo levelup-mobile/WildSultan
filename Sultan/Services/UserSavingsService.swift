@@ -15,6 +15,15 @@ class UserSavingsService {
         }
     }
     
+    var level: Int {
+        get {
+            return UserDefaults.standard.integer(forKey: "level")
+        } set {
+            guard newValue >= 1 else { return }
+            UserDefaults.standard.set(newValue, forKey: "money")
+        }
+    }
+    
     var sound: Bool {
         get {
             return UserDefaults.standard.bool(forKey: "sound")
@@ -133,5 +142,6 @@ class UserSavingsService {
         UserDefaults.standard.register(defaults: ["boughtItems": [true, false, false, false]])
         UserDefaults.standard.register(defaults: ["hero": 1])
         UserDefaults.standard.register(defaults: ["hero2": 1])
+        UserDefaults.standard.register(defaults: ["level": 1])
     }
 }

@@ -8,8 +8,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Inter-Bold.ttf">
-            <string>Inter-Bold</string>
+        <array key="JejuHallasan-Regular.ttf">
+            <string>JejuHallasan</string>
         </array>
     </customFonts>
     <scenes>
@@ -21,22 +21,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3E-dg-ZzJ">
-                                <rect key="frame" x="395" y="10" width="62" height="41.333333333333336"/>
-                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9m-0t-Npa">
+                                <rect key="frame" x="386" y="333" width="80" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="DVB-SD-RWv"/>
+                                    <constraint firstAttribute="height" constant="60" id="EGy-Zy-iPy"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="shop"/>
+                                <connections>
+                                    <action selector="openShop:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="rXa-en-YVm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdl-sH-2qK">
+                                <rect key="frame" x="415.66666666666669" y="10" width="21" height="33.333333333333336"/>
+                                <fontDescription key="fontDescription" name="JejuHallasan" family="JejuHallasan" pointSize="33"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin" translatesAutoresizingMaskIntoConstraints="NO" id="vXq-FL-p0x">
+                                <rect key="frame" x="441.66666666666669" y="14.333333333333336" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="axt-sr-Hj0"/>
+                                    <constraint firstAttribute="height" constant="25" id="fFJ-Au-ydU"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCV-QE-tvo">
+                                <rect key="frame" x="63" y="5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AZv-fZ-X4P"/>
+                                    <constraint firstAttribute="width" constant="50" id="KgD-oO-oz5"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="buttonExit"/>
+                                <connections>
+                                    <action selector="goBack:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="QkT-pP-qsy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sCC-p7-m8f"/>
                         <color key="backgroundColor" red="0.42641299960000001" green="0.60534566639999998" blue="0.20192193980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="e3E-dg-ZzJ" firstAttribute="top" secondItem="sCC-p7-m8f" secondAttribute="top" constant="10" id="XBa-VJ-fpv"/>
-                            <constraint firstItem="e3E-dg-ZzJ" firstAttribute="centerX" secondItem="FsB-Xv-pm1" secondAttribute="centerX" id="mgr-ti-SEG"/>
+                            <constraint firstItem="vXq-FL-p0x" firstAttribute="leading" secondItem="zdl-sH-2qK" secondAttribute="trailing" constant="5" id="IJD-lj-0Rr"/>
+                            <constraint firstItem="ZCV-QE-tvo" firstAttribute="leading" secondItem="sCC-p7-m8f" secondAttribute="leading" constant="4" id="L3l-tV-5fB"/>
+                            <constraint firstItem="m9m-0t-Npa" firstAttribute="centerX" secondItem="FsB-Xv-pm1" secondAttribute="centerX" id="TUl-s1-hKU"/>
+                            <constraint firstAttribute="bottom" secondItem="m9m-0t-Npa" secondAttribute="bottom" id="mn8-gs-UfD"/>
+                            <constraint firstItem="zdl-sH-2qK" firstAttribute="top" secondItem="sCC-p7-m8f" secondAttribute="top" constant="10" id="owH-uu-Aj9"/>
+                            <constraint firstItem="zdl-sH-2qK" firstAttribute="centerX" secondItem="FsB-Xv-pm1" secondAttribute="centerX" id="riv-zV-WxC"/>
+                            <constraint firstItem="vXq-FL-p0x" firstAttribute="centerY" secondItem="zdl-sH-2qK" secondAttribute="centerY" id="sfK-yn-6dT"/>
+                            <constraint firstItem="ZCV-QE-tvo" firstAttribute="top" secondItem="sCC-p7-m8f" secondAttribute="top" constant="5" id="vu2-T7-1xL"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="timerLabel" destination="e3E-dg-ZzJ" id="puo-ht-i66"/>
+                        <outlet property="moneyLabel" destination="zdl-sH-2qK" id="qGJ-rm-1C3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ee-cQ-9Fe" sceneMemberID="firstResponder"/>
@@ -44,4 +81,9 @@
             <point key="canvasLocation" x="760.56338028169023" y="-1367.175572519084"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="buttonExit" width="224" height="224"/>
+        <image name="coin" width="86" height="90"/>
+        <image name="shop" width="424" height="376"/>
+    </resources>
 </document>

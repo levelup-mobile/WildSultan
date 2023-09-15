@@ -11,10 +11,16 @@ struct MenuView: View {
     @State var nc: UINavigationController?
     @State var canShowBonus = UserSavingsService.shared.canGetBonus
     
+    @State var level = UserSavingsService.shared.level
+    
     var body: some View {
         VStack {
             Spacer()
             VStack(spacing: 0) {
+                Text("LEVEL \(level)")
+                    .foregroundColor(.white)
+                    .font(.custom("JejuHallasan", size: 28))
+                    .padding()
                 Button {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc = storyboard.instantiateViewController(identifier: "game")
@@ -26,6 +32,7 @@ struct MenuView: View {
                         .resizable()
                         .frame(width: 200, height: 70)
                 }
+                .padding(.vertical, 8)
                 Button {
                     let vc = UIHostingController(rootView: ShopView())
                     nc?.pushViewController(vc, animated: true)
@@ -80,6 +87,7 @@ struct MenuView: View {
         }
         .onAppear {
             canShowBonus = UserSavingsService.shared.canGetBonus
+            level = UserSavingsService.shared.level
         }
         .navigationBarHidden(true)
     }

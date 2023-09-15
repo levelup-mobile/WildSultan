@@ -19,7 +19,6 @@
 		BA9EB24C2A9CDA7300149C46 /* retro-land-mayhem.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2452A9CDA7300149C46 /* retro-land-mayhem.ttf */; };
 		BA9EB24D2A9CDA7300149C46 /* Gotham Pro Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2462A9CDA7300149C46 /* Gotham Pro Bold.ttf */; };
 		BA9EB24E2A9CDA7300149C46 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2472A9CDA7300149C46 /* background.mp3 */; };
-		BA9EB24F2A9CDA7300149C46 /* snow.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2482A9CDA7300149C46 /* snow.sks */; };
 		BA9EB2502A9CDA7300149C46 /* bomb.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2492A9CDA7300149C46 /* bomb.sks */; };
 		BA9EB2552A9CDA8000149C46 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BA9EB2532A9CDA8000149C46 /* GameScene.sks */; };
 		BA9EB2562A9CDA8000149C46 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9EB2542A9CDA8000149C46 /* GameScene.swift */; };
@@ -35,6 +34,8 @@
 		BA9EB26C2A9CDB2400149C46 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = BA9EB26B2A9CDB2400149C46 /* Introspect */; };
 		BA9EB26F2A9CDB9A00149C46 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = BA9EB26E2A9CDB9A00149C46 /* Lottie */; };
 		BAA517932AAFBE4A0079E300 /* PlayerShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA517922AAFBE4A0079E300 /* PlayerShopView.swift */; };
+		BAB7DA342AB2A119006EC89E /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7DA332AB2A119006EC89E /* ShopViewModel.swift */; };
+		BAB7DA362AB33E78006EC89E /* Castle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB7DA352AB33E78006EC89E /* Castle.swift */; };
 		BAC5515B2AAB20370005226E /* JejuHallasan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BAC5515A2AAB20370005226E /* JejuHallasan-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +53,6 @@
 		BA9EB2452A9CDA7300149C46 /* retro-land-mayhem.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "retro-land-mayhem.ttf"; sourceTree = "<group>"; };
 		BA9EB2462A9CDA7300149C46 /* Gotham Pro Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham Pro Bold.ttf"; sourceTree = "<group>"; };
 		BA9EB2472A9CDA7300149C46 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
-		BA9EB2482A9CDA7300149C46 /* snow.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = snow.sks; sourceTree = "<group>"; };
 		BA9EB2492A9CDA7300149C46 /* bomb.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = bomb.sks; sourceTree = "<group>"; };
 		BA9EB2532A9CDA8000149C46 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		BA9EB2542A9CDA8000149C46 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -66,6 +66,8 @@
 		BA9EB2602A9CDA9400149C46 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		BA9EB2682A9CDAFF00149C46 /* load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = load.json; sourceTree = "<group>"; };
 		BAA517922AAFBE4A0079E300 /* PlayerShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerShopView.swift; sourceTree = "<group>"; };
+		BAB7DA332AB2A119006EC89E /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
+		BAB7DA352AB33E78006EC89E /* Castle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Castle.swift; sourceTree = "<group>"; };
 		BAC5515A2AAB20370005226E /* JejuHallasan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JejuHallasan-Regular.ttf"; sourceTree = "<group>"; };
 		BAC5515C2AAB204E0005226E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,7 +137,6 @@
 				BA9EB2452A9CDA7300149C46 /* retro-land-mayhem.ttf */,
 				BA9EB2462A9CDA7300149C46 /* Gotham Pro Bold.ttf */,
 				BA9EB2472A9CDA7300149C46 /* background.mp3 */,
-				BA9EB2482A9CDA7300149C46 /* snow.sks */,
 				BA9EB2492A9CDA7300149C46 /* bomb.sks */,
 				BA9EB2682A9CDAFF00149C46 /* load.json */,
 			);
@@ -147,6 +148,7 @@
 			children = (
 				BA9EB2532A9CDA8000149C46 /* GameScene.sks */,
 				BA9EB2542A9CDA8000149C46 /* GameScene.swift */,
+				BAB7DA352AB33E78006EC89E /* Castle.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 				BA9EB25F2A9CDA9400149C46 /* GameOverView.swift */,
 				BA9EB2602A9CDA9400149C46 /* MenuView.swift */,
 				BAA517922AAFBE4A0079E300 /* PlayerShopView.swift */,
+				BAB7DA332AB2A119006EC89E /* ShopViewModel.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -242,7 +245,6 @@
 				BA9EB2302A9CAFF800149C46 /* LaunchScreen.storyboard in Resources */,
 				BA9EB24E2A9CDA7300149C46 /* background.mp3 in Resources */,
 				BAC5515B2AAB20370005226E /* JejuHallasan-Regular.ttf in Resources */,
-				BA9EB24F2A9CDA7300149C46 /* snow.sks in Resources */,
 				BA9EB24C2A9CDA7300149C46 /* retro-land-mayhem.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,10 +260,12 @@
 				BA9EB2632A9CDA9400149C46 /* GameViewController.swift in Sources */,
 				BA9EB2562A9CDA8000149C46 /* GameScene.swift in Sources */,
 				BA9EB2642A9CDA9400149C46 /* LoaderViewController.swift in Sources */,
+				BAB7DA342AB2A119006EC89E /* ShopViewModel.swift in Sources */,
 				BA9EB2422A9CDA6A00149C46 /* Double+withAbbreviations.swift in Sources */,
 				BA9EB23F2A9CDA6A00149C46 /* UserSavingsService.swift in Sources */,
 				BA9EB2622A9CDA9400149C46 /* SettingsView.swift in Sources */,
 				BA9EB2672A9CDA9400149C46 /* MenuView.swift in Sources */,
+				BAB7DA362AB33E78006EC89E /* Castle.swift in Sources */,
 				BA9EB2402A9CDA6A00149C46 /* Int+withAbbreviations.swift in Sources */,
 				BA9EB2582A9CDA8600149C46 /* AppDelegate.swift in Sources */,
 				BA9EB2412A9CDA6A00149C46 /* ImpactFeedback.swift in Sources */,

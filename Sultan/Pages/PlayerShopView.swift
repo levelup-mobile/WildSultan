@@ -10,11 +10,13 @@ struct PlayerShopView: View {
         }
     }
     
+    @StateObject var viewModel: ShopViewModel
+    
     var body: some View {
         VStack {
             HStack {
                 Button {
-                    nc?.popViewController(animated: true)
+                    nc?.popViewController(animated: true) 
                     SoundPlayer.shared.playClick()
                     ImpactFeedback.shared.makeImpackFeedback(.medium)
                 } label: {
@@ -52,7 +54,7 @@ struct PlayerShopView: View {
                             .padding(.bottom)
                     }
                     HStack(spacing: 0) {
-                                Text("\((100).withAbbreviation)")
+                                Text("\((20).withAbbreviation)")
                                     .foregroundColor(.orange)
                                     .font(.custom("JejuHallasan", size: 24))
                                     .padding(.trailing, 4)
@@ -62,7 +64,10 @@ struct PlayerShopView: View {
                     }
                     .padding(.top)
                     Button {
-                        
+                        let price = 20
+                        guard money >= price, viewModel.hp < 100 + viewModel.buildings * 10 else { return }
+                        money -= price
+                        viewModel.hp = min(100, viewModel.hp + 10)
                     } label: {
                         ZStack {
                             Image("button")
@@ -76,6 +81,7 @@ struct PlayerShopView: View {
                         }
                     }
                     .padding(.vertical)
+                    .opacity(viewModel.hp >= 100 + viewModel.buildings * 10 ? 0 : 1)
                 }
                 .frame(width: 120)
                 .padding()
@@ -94,7 +100,7 @@ struct PlayerShopView: View {
                             .padding(.bottom)
                     }
                     HStack(spacing: 0) {
-                                Text("\((150).withAbbreviation)")
+                                Text("\(((viewModel.buildings + 1) * 20).withAbbreviation)")
                                     .foregroundColor(.orange)
                                     .font(.custom("JejuHallasan", size: 24))
                                     .padding(.trailing, 4)
@@ -104,7 +110,10 @@ struct PlayerShopView: View {
                     }
                     .padding(.top)
                     Button {
-                        
+                        let price = (viewModel.buildings + 1) * 20
+                        guard money >= price, viewModel.buildings < 4 else { return }
+                        money -= price
+                        viewModel.buildings += 1
                     } label: {
                         ZStack {
                             Image("button")
@@ -118,6 +127,7 @@ struct PlayerShopView: View {
                         }
                     }
                     .padding(.vertical)
+                    .opacity(viewModel.buildings >= 4 ? 0 : 1)
                 }
                 .frame(width: 120)
                 .padding()
@@ -136,7 +146,7 @@ struct PlayerShopView: View {
                             .padding(.bottom)
                     }
                     HStack(spacing: 0) {
-                                Text("\((100).withAbbreviation)")
+                                Text("\((20).withAbbreviation)")
                                     .foregroundColor(.orange)
                                     .font(.custom("JejuHallasan", size: 24))
                                     .padding(.trailing, 4)
@@ -146,7 +156,10 @@ struct PlayerShopView: View {
                     }
                     .padding(.top)
                     Button {
-                        
+                        let price = 20
+                        guard money >= price else { return }
+                        money -= price
+                        viewModel.bombs += 1
                     } label: {
                         ZStack {
                             Image("button")
@@ -182,7 +195,7 @@ struct PlayerShopView: View {
 
 struct PlayerShopViewProvider: PreviewProvider {
     static var previews: some View {
-        PlayerShopView()
+        PlayerShopView(viewModel: ShopViewModel(buildings: 0, hp: 10, bombs: 0))
             .previewInterfaceOrientation(.landscapeLeft)
     }
 }
