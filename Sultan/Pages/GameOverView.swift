@@ -91,7 +91,7 @@ struct GameOverView: View {
             self.nc = nc
         }
         .onAppear {
-            if isWin != .win {
+            if isWin == .win {
                 UserSavingsService.shared.money += earnMoney
                 UserSavingsService.shared.level += 1
             }

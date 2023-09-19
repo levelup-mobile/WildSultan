@@ -58,13 +58,21 @@
                                     <action selector="goBack:" destination="kSt-tV-Y7n" eventType="touchUpInside" id="QkT-pP-qsy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIS-SF-cVN">
+                                <rect key="frame" x="727.33333333333337" y="10" width="60.666666666666629" height="34"/>
+                                <fontDescription key="fontDescription" name="JejuHallasan" family="JejuHallasan" pointSize="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sCC-p7-m8f"/>
                         <color key="backgroundColor" red="0.42641299960000001" green="0.60534566639999998" blue="0.20192193980000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aIS-SF-cVN" firstAttribute="top" secondItem="sCC-p7-m8f" secondAttribute="top" constant="10" id="8sw-iO-ymd"/>
                             <constraint firstItem="vXq-FL-p0x" firstAttribute="leading" secondItem="zdl-sH-2qK" secondAttribute="trailing" constant="5" id="IJD-lj-0Rr"/>
                             <constraint firstItem="ZCV-QE-tvo" firstAttribute="leading" secondItem="sCC-p7-m8f" secondAttribute="leading" constant="4" id="L3l-tV-5fB"/>
                             <constraint firstItem="m9m-0t-Npa" firstAttribute="centerX" secondItem="FsB-Xv-pm1" secondAttribute="centerX" id="TUl-s1-hKU"/>
+                            <constraint firstItem="sCC-p7-m8f" firstAttribute="trailing" secondItem="aIS-SF-cVN" secondAttribute="trailing" constant="5" id="awY-gi-0dE"/>
                             <constraint firstAttribute="bottom" secondItem="m9m-0t-Npa" secondAttribute="bottom" id="mn8-gs-UfD"/>
                             <constraint firstItem="zdl-sH-2qK" firstAttribute="top" secondItem="sCC-p7-m8f" secondAttribute="top" constant="10" id="owH-uu-Aj9"/>
                             <constraint firstItem="zdl-sH-2qK" firstAttribute="centerX" secondItem="FsB-Xv-pm1" secondAttribute="centerX" id="riv-zV-WxC"/>
@@ -74,6 +82,7 @@
                     </view>
                     <connections>
                         <outlet property="moneyLabel" destination="zdl-sH-2qK" id="qGJ-rm-1C3"/>
+                        <outlet property="timeLabel" destination="aIS-SF-cVN" id="Ox3-AN-DV2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ee-cQ-9Fe" sceneMemberID="firstResponder"/>

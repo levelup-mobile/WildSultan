@@ -26,10 +26,17 @@ class GameViewController: UIViewController {
     
     var store = Set<AnyCancellable>()
     
-    var time = 0 {
+    var time = 300 {
         didSet {
+            timeLabel.text = "\(time)"
             if time % 5 == 0 {
                 money += 1
+            }
+            
+            if time < 1 {
+                scene.isPaused = true
+                timer.invalidate()
+                finishGame(isWin: .lose)
             }
         }
     }
@@ -37,6 +44,8 @@ class GameViewController: UIViewController {
     @IBAction func goBack(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
+    @IBOutlet weak var timeLabel: UILabel!
     
     @IBOutlet weak var moneyLabel: UILabel!
     
@@ -75,7 +84,7 @@ class GameViewController: UIViewController {
                 self?.timer.invalidate()
                 return
             }
-            self.time += 1
+            self.time -= 1
         }
     }
     
@@ -85,6 +94,13 @@ class GameViewController: UIViewController {
         } else {
             return .all
         }
+    }
+    
+    func finishGame(isWin: Winning) {
+        scene.isPaused = true
+        timer.invalidate()
+        let vc = UIHostingController(rootView: GameOverView(isWin: isWin))
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func openShop(_ sender: Any) {
